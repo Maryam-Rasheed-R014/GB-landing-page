@@ -1,0 +1,205 @@
+
+@media (max-width: 1200px)
+{
+    #header .navbar{
+        display: none !important;
+    }
+    #header .icon{
+        display: block !important;
+    }
+    #header .btn{
+        justify-content: space-between !important;
+    }
+  
+}
+
+
+
+@media (max-width: 1025px) {
+    #header .btn button{
+       padding: 0px 20px;
+       margin-left: 20px;
+    }
+    #power .text{
+        text-align: center;
+        padding: 15% 20% 5% 20%;
+        
+    }  
+    #power .text h1{
+        line-height: 60px;
+        font-size: 42px;
+    }  
+   
+}
+
+
+@media (max-width: 992px) {
+   
+    #header .btn{
+        justify-content: flex-end !important;
+    }
+    #header .btn button{
+        margin-right: 10px;
+    }
+    #states .row .text{
+        margin-top: 50px;
+    }
+
+    
+}
+
+
+
+
+
+@media (max-width: 769px) {
+
+
+    #top-bar {
+        height: 33px;
+    }
+    #top-bar .gp i{
+        padding: 12px 0px;
+    }
+
+    #top-bar .logo {
+        display: none !important;
+    }
+
+    #top-bar .midtop {
+        justify-content: left !important;
+
+    }
+    #power .text{
+        text-align: center;
+        padding:30% 15% 0% 15%;
+    }
+    #power .text h1{
+        font-size: 38px;
+        line-height: 40px;}
+        
+    }
+  
+
+
+@media (max-width: 767px){
+
+   
+    #portfolio img{
+      
+        height: 300px;
+   
+    
+    }
+    #portfolio .first  {
+      
+        grid-template-rows:300px 300px !important;
+      margin-bottom: 20px;
+    gap: 20px;
+       
+       
+    }
+    #portfolio .second  {
+      
+        grid-template-rows:300px 300px 300px !important;
+      margin-bottom: 20px;
+      gap: 20px;
+       
+       
+    }
+    #portfolio .third {
+      
+        grid-template-rows:300px 300px 300px 300px!important;
+      gap: 20px;
+       
+       
+    }
+
+    #portfolio .item {
+        grid-row: span 1 !important; }
+      
+
+
+}
+
+@media (max-width: 731px){
+    #power .text {
+        padding: 25% 10% 0% 10%;
+    }
+    #states .row .text .info span{
+        font-size: 30px;
+    }
+
+
+}
+@media (max-width: 426px){
+    #power .text {
+        padding: 35% 5% 0% 5%;
+    }
+    #power .text  h1{
+      font-size: 22px;
+      line-height: 20px;
+    }
+    #power .text p{
+        font-size: 16px;
+    }
+    #services .heading{
+        font-size: 32px;
+    }
+
+
+}
+@media (max-width: 376px){
+     
+    #portfolio img{
+      
+        height: 200px;
+   
+    
+    }
+    #portfolio .first  {
+      
+        grid-template-rows:200px 200px !important;
+      margin-bottom: 10px;
+    gap: 10px;
+       
+       
+    }
+    #portfolio .second  {
+      
+        grid-template-rows:200px 200px 200px !important;
+      margin-bottom: 10px;
+      gap: 10px;
+       
+       
+    }
+    #portfolio .third {
+      
+        grid-template-rows:200px 200px 200px 200px!important;
+      gap: 10px;
+       
+       
+    }
+
+}
+@media (max-width: 321px)
+{
+    #power .text {
+        padding: 50% 5% 0% 5%;
+    }
+    #power .text p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 300px){
+    #power .text {
+        padding: 70% 5% 0% 5%;
+    }
+    #power .text  h1{
+        font-size: 18px;
+        line-height: 20px;
+      }
+  
+#top-bar .freedownload .upright{
+    display: none !important;
+}}

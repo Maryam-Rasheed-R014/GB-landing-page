@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-----------font awesome cdn 6.6 version--------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------- bootstrap cdn ---------------->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!---------------slider  ----------------->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <section id="top-bar" class="container-fluid back-color position-fixed top-0">
+        <div class="row">
+            <div class="col-4 logo d-flex">
+                <div class="img"><img src="images/logo.png" alt=""></div>
+                <div class="laptop"><i class="fa-solid fa-tv"></i></div>
+                <div class="mobile"><i class="fa-solid fa-mobile-screen-button" style="color: lightgray;"></i></div>
+                <div class="mobile"><i class="fa-solid fa-mobile-screen-button" style="color: lightgray;"></i></div>
+            </div>
+            <div class=" col-md-4 col-5 midtop d-flex">
+                <div class="gp"> <i class="fa-solid fa-less-than"></i><span style="color: white;"> Gp</span><i
+                        class="fa-solid fa-greater-than"></i></div>
+            </div>
+            <div class="col-4">
+                <div class="freedownload d-flex">
+                    <div class="upright"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                    <div class="download"><i class="fa-solid fa-download"></i>FREE DOWNLOAD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------header------------ -->
+    <section id="header">
+        <div class="container-fluid container-xl ">
+            <div class="row d-flex">
+                <div class="col-xl-2 col-5 d-flex align-item-center">
+                    <h2 class="sitename">GP<span>.</span></h2>
+                </div>
+                <ul class="navbar col-xl-7 d-flex justify-content-around  align-item-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a class="down1 position-relative">Dropdown <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown1 position-absolute"> <ul class="d-flex flex-column">
+                             <li><a href="#">Dropdown1</a></li>
+                                <li><a href="#">dropdown2</a></li>
+                               <li><a href="#" class="down2 position-relative">Dropdown3 <i class="fa-solid fa-caret-down " style="padding-left:30%  ;"></i></a>
+                                <div class="dropdown2 position-absolute">
+                                    <ul class="d-flex flex-column">
+                                    <li><a href="#">Dropdown 3.1</a></li>
+                                    <li><a href="#">Dropdown 3.2</a></li>
+                                    <li><a href="#">Dropdown 3.3</a></li>
+                                    <li><a href="#">Dropdown 3.4</a></li>
+                                   
+                                </ul></div>
+                            <li><a href="#services">Dropdown 4</a></li>
+                          
+                        </ul></div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class=" btn col-xl-3 col-7 d-flex justify-content-end">
+                    <button>Get Started</button>
+                    <div class="icon d-none position-relative "><i class="fa-solid fa-bars f-right"></i>
+                        
+
+
+                        <div class=" container parentlist p-0 position-absolute">
+                            <ul class="sidelist d-none">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href=""> Portfolio</a></li>
+                                <li><a href="">Team</a></li>
+                            
+                                    <li><a class="down1 d-flex justify-content-between position-relative">Dropdown <i class="fa-solid fa-caret-down"></i></a>
+                                        <div class="dropdown1 position-absolute"> <ul class="d-flex flex-column">
+                                                 <li><a href="#">Home</a></li>
+                                                    <li><a href="#">About</a></li>
+                                                   <li><a href="#" class="down2 position-relative">Dropdown <i class="fa-solid fa-caret-down " style="padding-left:30%  ;"></i></a>
+                                                    <div class="dropdown2 position-absolute">
+                                                        <ul class="d-flex flex-column">
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">About</a></li>
+                                                        <li><a href="#">Services</a></li>
+                                                        <li><a href="#"> Portfolio</a></li>
+                                                        <li><a href="#">Team</a></li>
+                                                    </ul></div>
+                                                <li><a href="#services">Services</a></li>
+                                                <li><a href="#portfolio"> Portfolio</a></li>
+                                                <li><a href="#team">Team</a></li>
+                                            </ul></div>
+                                        </li>
+                                
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+  
+    <!-- -------------power------------ -->
+    <section id="power" class="container-fluid position-relative">
+        <!-- Dark Overlay -->
+        <div class="overlay bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100 h-100"></div>
+
+        <div class="row position-relative">
+            <div class="container d-flex justify-content-center align-item-center">
+                <div class="text">
+                    <h1>Powerful Digital Solutions With GP<span>.</span></h1>
+                    <p>We are team of talented digital marketers</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row cardRow d-flex justify-content-center align-item-center mx-auto">
+
+                    <div class="col-xl-2 col-md-4 powerCard justify-content-center align-item-center">
+                        <i class="fa-solid fa-binoculars d-flex justify-content-center"></i>
+                        <h3><a href="" class="colorChange">Lorem Ipsum</a></h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 powerCard justify-content-center align-item-center">
+                        <i class="fa-solid fa-bullseye d-flex justify-content-center"></i>
+                        <h3><a href="" class="colorChange">Dolor Sitema</a></h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 powerCard justify-content-center align-item-center">
+                        <i class="fa-solid fa-compress d-flex justify-content-center"></i>
+                        <h3><a href="" class="colorChange">Sedare Perspiciatis</a></h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 powerCard justify-content-center align-item-center">
+                        <i class="fa-solid fa-clipboard-list d-flex justify-content-center"></i>
+                        <h3><a href="" class="colorChange">Magni Dolores</a></h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 powerCard justify-content-center align-item-center">
+                        <i class="fa-solid fa-gem d-flex justify-content-center"></i>
+                        <h3><a href="" class="colorChange">Nemos Enimade</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------about section------------------ -->
+    <section id="about" class="container-fluid">
+        <div class="container">
+            <div class="row mt-5 pt-5">
+                <div class="col-lg-6 order-lg-2 order-1 img">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-1 order-2 text">
+                    <h3>Voluptatem dignissimos provident</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua.
+                    </p>
+                    <ul>
+                        <li class="d-flex"><i class="fa-solid fa-check"></i>Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </li>
+                        <li class="d-flex"><i class="fa-solid fa-check"></i>Duis aute irure dolor in reprehenderit in
+                            voluptate velit.</li>
+
+                        <li class="d-flex"> <i class="fa-solid fa-check"></i>Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
+                            storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+                    <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------silder----------- -->
+    <section id="slider" class="container-fluid mb-5 ">
+        <div class="container mb-5">
+
+
+            <!-- Slider main container -->
+            <div class="swiper pb-5">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/client-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-6.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-7.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/client-8.png" alt=""></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------features------------- -->
+    <section id="features" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 img">
+                    <img src="images/features-bg.jpg" alt="">
+                </div>
+                <div class="col-lg-6 text">
+
+                    <ul>
+                        <li class="d-flex">
+                            <div><i class="fa-solid fa-box-archive"></i></div>
+                            <div>
+                                <h4>
+                                    Est labore ad</h4>
+                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="d-flex">
+                            <div><i class="fa-solid fa-basket-shopping"></i></div>
+                            <div>
+                                <h4>
+                                    Harum esse qui</h4>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div><i class="fa-solid fa-tower-broadcast"></i></div>
+                            <div>
+                                <h4>
+                                    Aut occaecati</h4>
+                                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div><i class="fa-solid fa-camera"></i></div>
+                            <div>
+                                <h4>
+                                    Beatae veritatis</h4>
+                                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------services------------------>
+    <section id="services" class="container-fluid">
+        <div class="container">
+            <p>SERVICES</p>
+            <p class="heading">CHECK OUR SERVICES</p>
+
+            <div class="row d-flex justify-content-center align-item-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="serviceCard">
+                        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Nesciunt Mete</h3>
+                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                            perferendis tempore et consequatur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="serviceCard">
+                        <div class="icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                        <h3>Eosle Commodi</h3>
+                        <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic
+                            non ut nesciunt dolorem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="serviceCard">
+                        <div class="icon"><i class="fa-solid fa-tv"></i></div>
+                        <h3>Ledo Markt</h3>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas
+                            adipisci eos earum corrupti.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="serviceCard">
+                        <div class="icon"><i class="fa-solid fa-border-none"></i></div>
+                        <h3>Asperiores Commodit</h3>
+                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit
+                            provident adipisci neque.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="serviceCard">
+                        <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+                        <h3>Velit Doloremque</h3>
+                        <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi
+                            at autem alias eius labore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="serviceCard">
+                        <div class="icon"><i class="fa-brands fa-rocketchat"></i></div>
+                        <h3>Dolori Architecto</h3>
+                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
+                            Corrupti recusandae ducimus enim.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ----------action------------------- -->
+    <section id="action" class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 text">
+                <h3>Call To Action</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.</p>
+                <button>Call To Action</button>
+            </div>
+        </div>
+    </section>
+    <!-- -----portfolio------------- -->
+    <section id="portfolio" class="portfolio section">
+
+        <div class="container">
+            <p>Portfolio</p>
+            <h3 class="heading">CHECK OUR PORTFOLIO</h3>
+            <div class="row d-flex justify-content-center">
+                <ul class="col-3 d-flex justify-content-center">
+                    <li class="pall">All</li>
+                    <li class="papp">App</li>
+                    <li class="pcard">Card</li>
+                    <li class="pweb">Web</li>
+
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-4 grid-container first">
+
+                    <div class="item item1 position-relative"><img src="images/masonry-portfolio-1.jpg" alt=""
+                            class="app">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item2 position-relative"><img src="images/masonry-portfolio-2.jpg" alt=""
+                            class="card">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4 grid-container second">
+
+                    <div class="item item1 position-relative"><img src="images/masonry-portfolio-3.jpg" alt=""
+                            class="web">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item2 position-relative"><img src="images/masonry-portfolio-4.jpg" alt=""
+                            class="app">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3 position-relative"><img src="images/masonry-portfolio-5.jpg" alt=""
+                            class="card">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4 grid-container third">
+
+                    <div class="item item1 position-relative"><img src="images/masonry-portfolio-6.jpg" alt=""
+                            class="web">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item2 position-relative"><img src="images/masonry-portfolio-7.jpg" alt=""
+                            class="app">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3 position-relative"><img src="images/masonry-portfolio-8.jpg" alt=""
+                            class="card">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>>
+                    </div>
+                    <div class="item item4 position-relative"><img src="images/masonry-portfolio-9.jpg" alt=""
+                            class="web">
+                        <div class="info position-absolute">
+                            <div class="div">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                            </div>
+
+                            <div class="link d-flex"><i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------states-------- -->
+    <section id="states" class="container-fluid mt-5 pt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-5">
+                    <div class="img"><img src="images/stats-img.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-item-center justify-content-center">
+                    <div class="text">
+                        <h4>Voluptatem dignissimos provident quasi</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                        </p>
+                        <div class="row">
+
+                            <div class="col-sm-6 d-flex mb-4">
+                                <div class="icon"><i class="fa-regular fa-face-smile"></i></div>
+                                <div class="info">
+                                    <span data-purecounter-start="0" data-purecounter-end="232"
+                                        data-purecounter-duration="0" class="purecounter">232</span>
+                                    <p><strong>Happy Clients </strong>consequuntur quae</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 d-flex mb-4">
+                                <div class="icon"><i class="fa-regular fa-newspaper"></i></div>
+                                <div class="info">
+                                    <span data-purecounter-start="0" data-purecounter-end="521"
+                                        data-purecounter-duration="0" class="purecounter">521</span>
+                                    <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 d-flex">
+                                <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+                                <div class="info">
+                                    <span data-purecounter-start="0" data-purecounter-end="1453"
+                                        data-purecounter-duration="0" class="purecounter">1453</span>
+                                    <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 d-flex">
+                                <div class="icon"><i class="fa-solid fa-person-military-pointing"></i></div>
+                                <div class="info">
+                                    <span data-purecounter-start="0" data-purecounter-end="32"
+                                        data-purecounter-duration="0" class="purecounter">32</span>
+                                    <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------testiminial----------- -->
+    <section id="testimonial" class="container-fluid position-relative mt-5 mb-5">
+        <div class="overlay bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 d-flex justify-content-center align-item-center">
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="flase" navigation="false"
+                        space-between="30" centered-slides="true" autoplay-delay="2500"
+                        autoplay-disable-on-interaction="false">
+                        <swiper-slide><img src="images/testimonials-1.jpg" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo & Founder</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                    rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                    risus at semper.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+
+                        </swiper-slide>
+                        <swiper-slide><img src="images/testimonials-2.jpg" alt="">
+                            <h3>Sara Wilsson</h3>
+                            <h4>Designer</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                            <p>
+                                <i class="fa fa-open-quote quote-icon-left"></i>
+                                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                    cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                    legam anim culpa.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </swiper-slide>
+                        <swiper-slide><img src="images/testimonials-3.jpg" alt="">
+                            <h3>John Larson</h3>
+                            <h4>Entrepreneur</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                                    noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse
+                                    veniam culpa fore nisi cillum quid.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+
+                        </swiper-slide>
+                        <swiper-slide><img src="images/testimonials-4.jpg" alt="">
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                    veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                    minim.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </swiper-slide>
+                        <swiper-slide><img src="images/testimonials-5.jpg" alt="">
+                            <h3>Matt Brandon</h3>
+                            <h4>Freelancer</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                    fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                    dolore labore illum veniam.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </swiper-slide>
+
+                    </swiper-container>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------team-------------- -->
+    <section id="team" class="container-fluid">
+
+        <div class="container">
+
+            <p>SERVICES</p>
+            <p class="heading">CHECK OUR SERVICES</p>
+            <div class="row d-flex justify-space-between align-item-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/team-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Walter White</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/team-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Walter White</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/team-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Walter White</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <img src="images/team-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Walter White</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- -----------contact----------- -->
+    <section id="contact" class="container-fluid">
+        <div class="container mt-5">
+            <p class="pt-5">SERVICES</p>
+            <p class="heading">CHECK OUR SERVICES</p>
+            <div class="row">
+                <div class="col-12 mt-3 mb-5">
+                    <iframe style="border:0; width: 100%; height: 270px;"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="text">
+
+                        <ul>
+                            <li class="d-flex">
+                                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+
+                                <div>
+                                    <h4>
+                                        Address</h4>
+                                    <p>A108 Adam Street, New York, NY 535022 </p>
+                                </div>
+                            </li>
+
+                            <li class="d-flex">
+                                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>
+
+                                        Call Us</h4>
+                                    <p>+1 5589 55488 55
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>
+                                        Email Us</h4>
+                                    <p>info@example.com </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+
+
+                    <div class="form-box">
+
+                        <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
+                            <div class="form-group first row">
+                                <div class="col-sm-6">
+                                    <input class="formControl" id="name" type="text" name="Name" placeholder="Name">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="formControl" id="email" type="email" name="Email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <input class="formControl" id="Subject" type="text" name="Subject"
+                                    placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+
+                                <textarea class="formControl" id="message" name="Message"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center row"><input class="btn btn-primary col-4"
+                                    type="submit" value="Send Message" /></div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--  -->
+    <section>
+        <footer class="container-fluid mt-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7">
+
+                        <div class="row  d-flex justify-content-between">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <h4>GP</h4>
+                                    </li>
+                                    <li>A108 Adam Street
+
+                                        New York, NY 535022</li>
+                                    <li><strong style="color: #ffff;">Phone:</strong> +1 5589 55488 55</li>
+                                    <li><strong style="color: #ffff;">Email:</strong> info@example.com</li>
+                                    <li class="d-flex social">
+                                        <i class="fa-solid fa-x"></i>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <h4>Useful Links</h4>
+                                    </li>
+                                    <li><i class="fa-solid fa-greater-than"></i>Home</li>
+                                    <li><i class="fa-solid fa-greater-than"></i>About us</li>
+                                    <li><i class="fa-solid fa-greater-than"></i>Services</li>
+                                    <li><i class="fa-solid fa-greater-than"></i>Terms of service</li>
+                                    <li><i class="fa-solid fa-greater-than"></i>Privicy policy</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <li>
+                                    <h4>Our Services</h4>
+                                </li>
+                                <li><i class="fa-solid fa-greater-than"></i>Wev Design</li>
+                                <li><i class="fa-solid fa-greater-than"></i>Web Development</li>
+                                <li><i class="fa-solid fa-greater-than"></i>Product Managment</li>
+                                <li><i class="fa-solid fa-greater-than"></i>Marketing</li>
+                                <li><i class="fa-solid fa-greater-than"></i>Graphic Desiging</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 mt-xl-0 mt-3">
+                        <ul>
+                            <li>
+                                <h4>Our Newsletter</h4>
+                            </li>
+                            <li>
+                                <p>
+                                    Web Development
+                                    Product Management
+                                    Marketing
+                                    Graphic Design
+                                    Our Newsletter
+                                    Subscribe to our newsletter and receive the latest news about our products and
+                                    services!
+                                </p>
+                            </li>
+                            <li>
+                                <div class="d-flex subscribe">
+                                    <input type="email" id="email" name="email" placeholder="Email">
+                                    <button class="btn">Subscribe</button>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-item-center  pt-5 pb-3">
+                    <div class="col-12">
+                        <p style="color: white; text-align: center;font-size: 14px;">© Copyright GP All Rights Reserved
+                        </p>
+                        <p style="color: white; text-align: center;font-size: 14px ;">Designed by <span
+                                style="color: #ffc451;">BootstrapMade</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- #slider -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- purcounter -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <!-- testimonial swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
