@@ -359,8 +359,11 @@ width: 90%;
   }
   
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-top: 50px;
 
+position: static;
+display: flex;
+justify-content: center;
+margin-top: 20px;
  
 }
   
