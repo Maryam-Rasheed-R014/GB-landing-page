@@ -12,16 +12,14 @@
     <!-------------- bootstrap cdn ---------------->
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <!---------------slider  ----------------->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 
-<body>
+<body class="position-relative">
     <section id="top-bar" class="container-fluid back-color position-fixed top-0">
         <div class="row">
             <div class="col-4 logo d-flex">
@@ -56,28 +54,32 @@
                     <li><a href="#portfolio"> Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a class="down1 position-relative">Dropdown <i class="fa-solid fa-caret-down"></i></a>
-                    <div class="dropdown1 position-absolute"> <ul class="d-flex flex-column">
-                             <li><a href="#">Dropdown1</a></li>
+                        <div class="dropdown1 position-absolute">
+                            <ul class="d-flex flex-column">
+                                <li><a href="#">Dropdown1</a></li>
                                 <li><a href="#">dropdown2</a></li>
-                               <li><a href="#" class="down2 position-relative">Dropdown3 <i class="fa-solid fa-caret-down " style="padding-left:30%  ;"></i></a>
-                                <div class="dropdown2 position-absolute">
-                                    <ul class="d-flex flex-column">
-                                    <li><a href="#">Dropdown 3.1</a></li>
-                                    <li><a href="#">Dropdown 3.2</a></li>
-                                    <li><a href="#">Dropdown 3.3</a></li>
-                                    <li><a href="#">Dropdown 3.4</a></li>
-                                   
-                                </ul></div>
-                            <li><a href="#services">Dropdown 4</a></li>
-                          
-                        </ul></div>
+                                <li><a href="#" class="down2 position-relative">Dropdown3 <i
+                                            class="fa-solid fa-caret-down " style="padding-left:30%  ;"></i></a>
+                                    <div class="dropdown2 position-absolute">
+                                        <ul class="d-flex flex-column">
+                                            <li><a href="#">Dropdown 3.1</a></li>
+                                            <li><a href="#">Dropdown 3.2</a></li>
+                                            <li><a href="#">Dropdown 3.3</a></li>
+                                            <li><a href="#">Dropdown 3.4</a></li>
+
+                                        </ul>
+                                    </div>
+                                <li><a href="#services">Dropdown 4</a></li>
+
+                            </ul>
+                        </div>
                     </li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class=" btn col-xl-3 col-7 d-flex justify-content-end">
+                <div class="btn col-xl-3 col-7 d-flex justify-content-end">
                     <button>Get Started</button>
                     <div class="icon d-none position-relative "><i class="fa-solid fa-bars f-right"></i>
-                        
+
 
 
                         <div class=" container parentlist p-0 position-absolute">
@@ -87,30 +89,36 @@
                                 <li><a href="">Services</a></li>
                                 <li><a href=""> Portfolio</a></li>
                                 <li><a href="">Team</a></li>
-                            
-                                    <li><a class="down1 d-flex justify-content-between position-relative">Dropdown <i class="fa-solid fa-caret-down"></i></a>
-                                        <div class="dropdown1 position-absolute"> <ul class="d-flex flex-column">
-                                                 <li><a href="#">Home</a></li>
-                                                    <li><a href="#">About</a></li>
-                                                   <li><a href="#" class="down2 position-relative">Dropdown <i class="fa-solid fa-caret-down " style="padding-left:30%  ;"></i></a>
-                                                    <div class="dropdown2 position-absolute">
-                                                        <ul class="d-flex flex-column">
+
+                                <li><a class="down1 d-flex justify-content-between position-relative">Dropdown <i
+                                            class="fa-solid fa-caret-down"></i></a>
+                                    <div class="dropdown1 position-absolute">
+                                        <ul class="d-flex flex-column">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#" class="down2 position-relative">Dropdown <i
+                                                        class="fa-solid fa-caret-down "
+                                                        style="padding-left:30%  ;"></i></a>
+                                                <div class="dropdown2 position-absolute">
+                                                    <ul class="d-flex flex-column">
                                                         <li><a href="#">Home</a></li>
                                                         <li><a href="#">About</a></li>
                                                         <li><a href="#">Services</a></li>
                                                         <li><a href="#"> Portfolio</a></li>
                                                         <li><a href="#">Team</a></li>
-                                                    </ul></div>
-                                                <li><a href="#services">Services</a></li>
-                                                <li><a href="#portfolio"> Portfolio</a></li>
-                                                <li><a href="#team">Team</a></li>
-                                            </ul></div>
-                                        </li>
-                                
+                                                    </ul>
+                                                </div>
+                                            <li><a href="#services">Services</a></li>
+                                            <li><a href="#portfolio"> Portfolio</a></li>
+                                            <li><a href="#team">Team</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+
                                 <li><a href="">Contact</a></li>
                             </ul>
                         </div>
-                    
+
 
 
                     </div>
@@ -120,11 +128,13 @@
         </div>
         </div>
     </section>
-  
+
     <!-- -------------power------------ -->
     <section id="power" class="container-fluid position-relative">
         <!-- Dark Overlay -->
-        <div class="overlay bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);">
+        </div>
+
 
         <div class="row position-relative">
             <div class="container d-flex justify-content-center align-item-center">
@@ -133,8 +143,8 @@
                     <p>We are team of talented digital marketers</p>
                 </div>
             </div>
-            <div class="container">
-                <div class="row cardRow d-flex justify-content-center align-item-center mx-auto">
+            <div class="container  d-flex justify-content-center">
+                <div class="row p-5  w-60  cardRow  d-flex justify-content-center align-item-center">
 
                     <div class="col-xl-2 col-md-4 powerCard justify-content-center align-item-center">
                         <i class="fa-solid fa-binoculars d-flex justify-content-center"></i>
@@ -194,26 +204,33 @@
         </div>
     </section>
     <!-- -------------silder----------- -->
-    <section id="slider" class="container-fluid mb-5 ">
-        <div class="container mb-5">
+    <section id="slider" class="container-fluid mb-5  pb-3 pt-5">
+        <div class="mb-5">
 
 
-            <!-- Slider main container -->
-            <div class="swiper pb-5">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="images/client-1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-2.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-3.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-4.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-5.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-6.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-7.png" alt=""></div>
-                    <div class="swiper-slide"><img src="images/client-8.png" alt=""></div>
-                </div>
 
-                <div class="swiper-pagination"></div>
+
+            <div class="row">
+                <section class="section slider-section d-flex justify-content-center">
+                    <div class="container slider-column">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <img class="swiper-slide" src="images/client-1.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-2.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-3.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-4.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-5.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-6.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-7.png" alt="Swiper" style="width: 86px; margin: auto;">
+                          <img class="swiper-slide" src="images/client-8.png" alt="Swiper" style="width: 86px; margin: auto;">
+                        </div>
+                        <span class="swiper-pagination"></span>
+                       
+                      </div>
+                    </div>
+                  </section>
+                  </main>
+
             </div>
         </div>
     </section>
@@ -221,14 +238,14 @@
     <!-- --------------features------------- -->
     <section id="features" class="container-fluid">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 img">
-                    <img src="images/features-bg.jpg" alt="">
+            <div class="row d-flex">
+                <div class="col-lg-6 img d-flex align-items-stretch">
+                    <img src="images/features-bg.jpg" alt="" class="img-fluid h-100 w-100" style="object-fit: cover;">
                 </div>
-                <div class="col-lg-6 text">
+                <div class="col-lg-6 text d-flex">
 
-                    <ul>
-                        <li class="d-flex">
+                    <ul class="ps-0">
+                        <li class="d-flex ps-0 ps-lg-3 pt-4 pt-lg-0">
                             <div><i class="fa-solid fa-box-archive"></i></div>
                             <div>
                                 <h4>
@@ -238,7 +255,7 @@
                             </div>
                         </li>
 
-                        <li class="d-flex">
+                        <li class="d-flex ps-0 ps-lg-3 pt-4 pt-lg-0">
                             <div><i class="fa-solid fa-basket-shopping"></i></div>
                             <div>
                                 <h4>
@@ -247,7 +264,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex ps-0 ps-lg-3 pt-4 pt-lg-0">
                             <div><i class="fa-solid fa-tower-broadcast"></i></div>
                             <div>
                                 <h4>
@@ -256,7 +273,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="d-flex">
+                        <li class="d-flex ps-0 ps-lg-3 pt-4 pt-lg-0">
                             <div><i class="fa-solid fa-camera"></i></div>
                             <div>
                                 <h4>
@@ -289,8 +306,8 @@
                     <div class="serviceCard">
                         <div class="icon"><i class="fa-solid fa-tower-broadcast"></i></div>
                         <h3>Eosle Commodi</h3>
-                        <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic
-                            non ut nesciunt dolorem.</p>
+                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                            perferendis tempore et consequatur.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -343,7 +360,7 @@
         </div>
     </section>
     <!-- -----portfolio------------- -->
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="container-fluid">
 
         <div class="container">
             <p>Portfolio</p>
@@ -494,20 +511,21 @@
     <!-- ---------states-------- -->
     <section id="states" class="container-fluid mt-5 pt-5">
         <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="col-lg-5">
-                    <div class="img"><img src="images/stats-img.jpg" alt=""></div>
+            <div class="row d-flex justify-content-between align-items-stretch">
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="img"><img src="images/stats-img.jpg" alt="" class="img-fluid h-100 w-100"
+                            style="object-fit: cover;"></div>
                 </div>
                 <div class="col-lg-6 d-flex flex-column align-item-center justify-content-center">
                     <div class="text">
-                        <h4>Voluptatem dignissimos provident quasi</h4>
+                        <h4 class="fs-2 fw-bold mb-3">Voluptatem dignissimos provident quasi</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                         </p>
-                        <div class="row">
+                        <div class="row gy-4">
 
-                            <div class="col-sm-6 d-flex mb-4">
+                            <div class="col-md-6 d-flex">
                                 <div class="icon"><i class="fa-regular fa-face-smile"></i></div>
                                 <div class="info">
                                     <span data-purecounter-start="0" data-purecounter-end="232"
@@ -517,7 +535,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-sm-6 d-flex mb-4">
+                            <div class="col-md-6 d-flex">
                                 <div class="icon"><i class="fa-regular fa-newspaper"></i></div>
                                 <div class="info">
                                     <span data-purecounter-start="0" data-purecounter-end="521"
@@ -527,8 +545,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-sm-6 d-flex">
-                                <div class="icon"><i class="fa-solid fa-headphones"></i></div>
+                            <div class="col-md-6 d-flex">
+                                <div class="icon"><i class="fa-brands fa-teamspeak"></i></div>
                                 <div class="info">
                                     <span data-purecounter-start="0" data-purecounter-end="1453"
                                         data-purecounter-duration="0" class="purecounter">1453</span>
@@ -537,8 +555,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-sm-6 d-flex">
-                                <div class="icon"><i class="fa-solid fa-person-military-pointing"></i></div>
+                            <div class="col-md-6 d-flex">
+                                <div class="icon"><i class="fa-solid fa-user"></i></div>
                                 <div class="info">
                                     <span data-purecounter-start="0" data-purecounter-end="32"
                                         data-purecounter-duration="0" class="purecounter">32</span>
@@ -789,8 +807,10 @@
                                 <textarea class="formControl" id="message" name="Message"
                                     placeholder="Message"></textarea>
                             </div>
-                            <div class="d-flex justify-content-center row"><input class="btn btn-primary col-4"
-                                    type="submit" value="Send Message" /></div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12 d-flex justify-content-center"><input class="btn btn-primary"
+                                        type="submit" value="Send Message" /></div>
+                            </div>
                     </div>
                     </form>
                 </div>
@@ -798,15 +818,15 @@
         </div>
         </div>
     </section>
-    <!--  -->
+    <!-- footer -->
     <section>
         <footer class="container-fluid mt-5 pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-7">
+                    <div class="col-xl-8">
 
                         <div class="row  d-flex justify-content-between">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <ul>
                                     <li>
                                         <h4>GP</h4>
@@ -826,7 +846,7 @@
 
                                 </ul>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <ul>
                                     <li>
                                         <h4>Useful Links</h4>
@@ -838,11 +858,11 @@
                                     <li><i class="fa-solid fa-greater-than"></i>Privicy policy</li>
                                 </ul>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <li>
                                     <h4>Our Services</h4>
                                 </li>
-                                <li><i class="fa-solid fa-greater-than"></i>Wev Design</li>
+                                <li><i class="fa-solid fa-greater-than"></i>Web Design</li>
                                 <li><i class="fa-solid fa-greater-than"></i>Web Development</li>
                                 <li><i class="fa-solid fa-greater-than"></i>Product Managment</li>
                                 <li><i class="fa-solid fa-greater-than"></i>Marketing</li>
@@ -851,7 +871,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 mt-xl-0 mt-3">
+                    <div class="col-xl-4 mt-xl-0 mt-3">
                         <ul>
                             <li>
                                 <h4>Our Newsletter</h4>
@@ -888,8 +908,9 @@
             </div>
         </footer>
     </section>
-
-
+    <!-- <div class="dbtn position-fixed" style="bottom: 20px; right: 15px; background-color: #ffc451;z-index: 9;"><a
+            style="color: black;" href="#power"><i class="fa-solid fa-arrow-up"></i></a></div>
+ -->
 
 
 
@@ -899,8 +920,9 @@
 
 
     <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- #slider -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- purcounter -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <!-- testimonial swiper -->

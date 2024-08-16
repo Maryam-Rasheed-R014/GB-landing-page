@@ -25,48 +25,61 @@ cards.forEach((card, index) => {
 
 
 // -------------------slider-------------------
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-    centeredSlides: true,
-    autoplay:true,
-    
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // centeredSlides: true,
+  // slidesPerView: 1,
+  //  grabCursor: true,
+  //  freeMode: false,
+   loop: true,
+  // mousewheel: false,
+  // keyboard: {
+  //   enabled: true
+  // },
+
+  // Enabled autoplay mode
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false
+  },
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: false,
+    clickable: true
+  },
+
+ 
+
+  // Responsive breakpoints
+  breakpoints: {
+    310: {
+      slidesPerView: 2,
+      spaceBetween: 30
     },
-  
-    // Pagination (dot indicators)
-    pagination: {
-      el: '.swiper-pagination',  // Element where pagination (dots) will be rendered
-      clickable: true,           // Makes pagination dots clickable
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 30
     },
-  
-    // Responsive breakpoints
-    breakpoints: {
-      424: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      },
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 30
-      },
-      // when window width is >= 1024px
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 40
-      },
-      // when window width is >= 1280px
-      1280: {
-        slidesPerView: 6,
-        spaceBetween: 50
-      }
+    426:{
+      slidesPerView: 3,
+      spaceBetween: 60
+    },
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 50
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween:70
     }
-  });
-  
+  }
+});
+
+
 
 
 
@@ -130,6 +143,23 @@ window.addEventListener('scroll', animateSections);
 
 
 // Dropdown 1
+const down1 = document.querySelector('.down1');
+const dropdown1 = document.querySelector('.dropdown1');
+
+// Show dropdown1 on mouseenter
+down1.addEventListener('mouseenter', function() {
+  dropdown1.style.display = 'block';
+});
+
+// Hide dropdown1 when the mouse leaves both down1 and dropdown1
+down1.addEventListener('mouseleave', function(event) {
+  if (!dropdown1.contains(event.relatedTarget)) {
+    dropdown1.style.display = 'none';
+  }
+});
+
+dropdown1.addEventListener('mouseleave', function(event) {
+  if (!down1.contains(event.relatedTarget)) {
     dropdown1.style.display = 'none';
   }
 });
@@ -146,5 +176,5 @@ down2.addEventListener('mouseenter', function() {
 // Hide dropdown2 when the mouse leaves both down2 and dropdown2
 down2.addEventListener('mouseleave', function(event) {
   if (!dropdown2.contains(event.relatedTarget))
-  dropdown2.style.display ='none';}
+  dropdown2.style.display ='none'}
   );

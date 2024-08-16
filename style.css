@@ -150,6 +150,12 @@ a {
 
 button:hover {
     background-color: #ffc451 !important;
+
+  
+}
+#header .btn{
+    border: 0px;
+    border-radius: 0%;
 }
 
 #header .icon {
@@ -226,7 +232,7 @@ width: 90%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: cover;
-    padding-bottom: 30px !important;
+  
 
 }
 
@@ -250,35 +256,37 @@ width: 90%;
 }
 
 #power .text p {
-    color: rgb(237, 235, 235);
-    font-weight: 700;
+    color: lightgray;
+    font-weight: 600;
     padding-top: 0px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #power .powerCard {
-    border: 1px solid lightgray;
-    margin: 5px;
-    padding: 10px;
    
+    border: 1px solid gray;
+      padding: 20px 20px;
+  margin:   10px;
 
 }
 
 #power .powerCard i {
     color: #ffc451;
     font-size: 32px;
-    margin: 10px auto;
+    padding-top: 10px;
+    
 }
 
 #power .powerCard h3 {
     text-align: center;
-    font-weight: 600;
+ 
+    font-family: 'Raleway', sans-serif;
 
 }
 
 #power .powerCard h3 a {
     color: lightgray;
-    font-size: 22px;
+    font-size: 20px;
 
 
 }
@@ -314,58 +322,51 @@ width: 90%;
 }
 /* -------------------slider----------------------- */
 
-.swiper {
-
-    width: 100%;
-    max-width: 1280px;
-   
+:root {
+    --white-100: hsl(206, 5%, 100%);
+    --white-200: hsl(206, 5%, 90%);
+    --white-300: hsl(206, 5%, 80%);
+    --white-400: hsl(206, 5%, 65%);
+    --white-500: hsl(206, 5%, 45%);
   
+    --black-100: hsl(210, 20%, 10%);
+    --black-200: hsl(210, 20%, 8%);
+    --black-300: hsl(210, 20%, 6%);
+    --black-400: hsl(210, 20%, 4%);
+    --black-500: hsl(210, 20%, 1%);
   }
-  .swiper-slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
+  
+
+ #slider .swiper{
+   
+
+
+ position: static;
+ }
+ #slider .swiper-slide {
+    display: block;
  
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    filter: grayscale(90%);
+    height: 26px !important;
   }
 
-  .swiper-slide img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 70px;
-    height: 40px;
-    filter: grayscale(100%);
+  #slider img{
+    object-fit:contain;
   }
+  
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+top: 50px;
 
-  /* Styling the pagination dots */
-.swiper-pagination {
-    position: absolute;
-   top: 80px;
-    bottom: 10px; /* Adjust this value to position the dots vertically */
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 9;
+ 
 }
-
-.swiper-pagination-bullet {
-    width: 8px;            /* Width of each dot */
-    height: 8px;           /* Height of each dot */
-    margin: 20px 5px;          /* Space between dots */
-    background-color: #ddd; /* Color of the inactive dots */
-    opacity: 1;             /* Ensure dots are fully visible */
-    border-radius: 50%;     /* Makes the dots circular */
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-/* Active dot styling */
-.swiper-pagination-bullet-active {
-    background-color: #ffc451; /* Color of the active dot */
-    transform: scale(1.2);     /* Slightly enlarge the active dot */
-}
-
-
-
-
+  
+  .swiper 
+  
+  
 
 /* ---------------------features-------------------- */
 #features .row{
@@ -380,23 +381,27 @@ width: 90%;
     
 }
 #features .row .text h4{
-    font-weight: 500;
-  
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px 5px;
+   font-family:  'Raleway' , sans-serif;
     color: #151515;
 }
 #features .row .text p{
-  font-size: 14px;
+  font-size: 15px;
  padding-bottom: 20px;
-    color: gray;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif
    
 }
 #features.row .text ul{
-    padding: 0px
+    padding: 0px;
+    padding-right: 0rem !important;
 }
 #features .row .text ul li i{
     color: #ffc451;
     font-size: 42px;
-    margin: 10px  20px 10px 0px !important;
+    margin: 10px  20px 0px 0px !important;
 }
 
 /* --------services------------ */
@@ -579,12 +584,7 @@ margin: 40px auto;
 
 
 }
-#states .row .img img{
-    width: 100%;
-    height: 90%;
 
-    
-}
 #states .row .text .row{
     margin: 30px auto;
 }
@@ -595,21 +595,27 @@ margin: 40px auto;
 #states .row .text p{
   
   color: #444444;
-  font-size: 14px;
+  font-size: 16px;
  }
  #states .row .text i{
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 400;
     color: #ffc451;
     text-align: center;
     padding:  5px 0px;
-    margin-right: 20px;
+    margin-right: 15px;
  }
 
 #states .row .text .info span{
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+}
+#states .row .text .info p{
+    font-size: 14px;
+    margin-right: 0px;
+    padding: 15px 0px 0px 0px;
+    color: rgba(0, 0, 0, 0.3);
 }
 #testimonial{
     background-image: url(images/testimonials-bg.jpg);
@@ -693,9 +699,18 @@ swiper-container {
 }
 #team .row .card{
 margin-top: 20px;
+border: 0px;
+box-shadow: 2px 2px 7px lightgray;
+}
+#team .row  h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 #team .row p{
-    padding-left: -10px;
+    padding-left: 0px;
+    font-family: 'Roboto' sans-serif;
 }
 /* ---------------contact ---------*/
 #contact p{
@@ -711,13 +726,14 @@ margin-top: 20px;
 }
 #contact .row .text h4{
     font-weight: 500;
-  
+  font-size: 18px;
     color: #151515;
 }
 #contact .row .text p{
   font-size: 14px;
  padding-bottom: 20px;
     color: gray;
+    padding-left: 0px;
    
 }
 #contact .row .text ul{
@@ -727,7 +743,7 @@ margin-top: 20px;
     width: 45px;
     height: 45px; 
      background-color: #ffc451;
-     margin-right: 10px;
+     margin-right: 15px;
      border-radius: 5px;
      text-align: center;
 }
@@ -785,8 +801,9 @@ margin-top: 20px;
 #contact .btn{
    
     background-color: #ffc451;
-    padding-top: 10px;
+    padding: 10px 30px;
     border: 0;
+    width:max-content;
     border-radius: 5px;
     color: #151515;
     text-align: center;
@@ -801,15 +818,20 @@ footer h4{
 footer li{
     color: #fff;
 }
+
 footer .social i{
     background-color: rgb(48, 47, 47);
     color: lightgray;
-  width: 30px;
-  height: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: medium;
     border-radius: 5px;
-    padding-top: 8px;
-   margin:  15px 15px 0px 0px;
+    padding-top: 10px;
+   margin:  15px 10px 0px 0px;
     text-align: center;
+}
+footer .social i:hover{
+    background-color: #ffc451;
 }
 footer li{
     font-size: 14px;
@@ -865,7 +887,9 @@ footer .subscribe .btn {
     cursor: pointer; /* Changes cursor to pointer on hover */
     transition: background-color 0.3s; /* Adds a smooth transition */
 }
-
+footer .subscribe .btn:hover{
+    background-color: #fabb3e;
+}
 @keyframes animate {
     from {
         transform: translateY(50%);
@@ -927,3 +951,5 @@ section.animate .row {
 .dblock{
     display: block;
 }
+
+
